@@ -9,6 +9,9 @@ import matplotlib.pyplot as plt
 
 
 class Model(nn.Module):
+    """
+    Creates a neural network model
+    """
     def __init__(self, input_size, output_size):
         super(Model, self).__init__()
 
