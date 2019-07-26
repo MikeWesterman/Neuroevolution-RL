@@ -7,7 +7,10 @@ import torch
 
 
 def train_td3(max_timesteps=1000000):
-    env = gym.make("RoboschoolWalker2d-v1")
+    """
+    Train a td3 policy
+    """
+    env = gym.make("RoboschoolWalker2d-v1") # Edit here to change the environment used.
     state_dim = env.observation_space.shape[0]
     action_dim = env.action_space.shape[0] 
     max_action = float(env.action_space.high[0])
